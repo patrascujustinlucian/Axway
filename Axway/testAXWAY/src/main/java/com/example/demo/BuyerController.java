@@ -49,7 +49,7 @@ public class BuyerController {
                                     .findAny()
                                     .orElse(null);
 
-        if(buyerFound == null){
+        if(buyerFound1 == null){
 
              buyerRepository.save(buyer);
              return "buyer saved";
